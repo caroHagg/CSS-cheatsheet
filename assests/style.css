@@ -1,0 +1,95 @@
+:root{
+    --big-text: #E866EC;
+    --outline: #E0EAE5;
+    --glow-color: #B558BB;
+    --bg-color: #31363B;
+}
+::selection{
+    background-color: var(--outline);
+}
+body{
+    background: var(--bg-color);
+    font-family: sans-serif;
+}
+header, footer{
+    min-height: 15vh;
+    text-align: center;
+    color:var(--big-text);
+}
+header h1{
+    
+    
+}
+header p{
+    margin-bottom: 50px;
+    color:var(--outline);
+    font-size: 12px;
+    text-align: center;
+      
+}
+main{
+    min-height: 70vh;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-holder{
+    border:1px dashed var(--outline);
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    padding:0.5% 0.5%;
+    margin:1% 0;
+    
+}
+.card-holder h2,p{
+    color:var(--big-text);
+    
+}
+.card-holder > h2{
+
+    align-items: center;
+    position:relative;
+    margin-top: -25px;
+    background-color: var(--bg-color);
+    border:1px solid var(--outline);
+    border-radius: 5px;
+}
+pre{
+    border-radius: 10px;
+    align-items: center;
+    background-image: linear-gradient( #71477A 0%,#A353A9 100%);
+}
+code{
+    user-select: all;
+}
+footer{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.card-holder, .card-holder h2 {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    }
+
+.card-holder:hover, .card-holder h2:hover{
+    box-shadow: inset 0px 0px 8px 
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+    }
+
+@media screen and (max-width: 992px) {
+    .card-holder{
+        width: 45%;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .card-holder{
+        width: 100%;
+    }  
+}
+
+
